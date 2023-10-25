@@ -37,7 +37,6 @@ body{
     width: 100%;
     right: 0px;
     height: 0;
-    padding-top: 20px;
     transition: .5s;
     background: #0460D9;
     z-index: 1000;
@@ -49,7 +48,7 @@ body{
 #nav.active #menu {
     height: calc(100vh - 70px);        display: block;
     visibility: visible;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #menu li {
