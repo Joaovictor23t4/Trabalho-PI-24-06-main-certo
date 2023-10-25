@@ -1,3 +1,5 @@
+// Menu Mobile
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
@@ -17,3 +19,14 @@ else {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+// Altura Header
+
+
+window.addEventListener("resize", () => {
+    const header = document.getElementById("header");
+    const menu = document.getElementById("menu");
+    const alturaHeader = header.offsetHeight;
+    menu.style.top = alturaHeader + "px";
+    menu.style.marginTop = "0px";
+});

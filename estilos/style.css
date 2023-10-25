@@ -35,7 +35,6 @@ body{
     display: block;
     position: absolute;
     width: 100%;
-    top: 11%;
     right: 0px;
     height: 0;
     padding-top: 20px;
@@ -165,7 +164,7 @@ article p {
 
 
 .imagem{
-    border-radius:10%;
+    border-radius: 10px;
     margin: 0 auto;
     height: 8cm;
     text-align: center;
@@ -189,7 +188,7 @@ article p {
 }
 
 #imagem-bruxelas {
-    border-radius:10%;
+    border-radius: 10px;
     margin: 0 auto;
     width: 100%;
     height: 8cm;
