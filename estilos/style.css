@@ -291,4 +291,21 @@ footer {
     main {
         margin: 0 15%;
     }
+
+    #logo {
+        width: 10%;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        margin: 0 8%;
+    }
+}
+
+@media (max-width: 550px) {
+    #logo {
+        width: 15%;
+        margin-left: 44.5%;
+    }
 }
