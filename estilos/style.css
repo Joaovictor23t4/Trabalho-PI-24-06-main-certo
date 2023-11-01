@@ -301,6 +301,12 @@ footer {
     }
 }
 
+@media (max-width: 1280px) {
+    .imagem {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1000px) {
     main {
         margin: 0 15%;
@@ -340,6 +346,13 @@ footer {
 
     .navFooter > ul {
         padding-left: 0px;
+    }
+}
+
+@media (max-width: 750px) {
+    article {
+        margin-right: 1cm;
+        margin-left: 1cm;
     }
 }
 
