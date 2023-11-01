@@ -22,11 +22,14 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 // Altura Header
 
+function alturaHeaderMenu() {
+    window.addEventListener("resize", () => {
+        const header = document.getElementById("header");
+        const menu = document.getElementById("menu");
+        const alturaHeader = header.offsetHeight;
+        menu.style.top = alturaHeader + "px";
+        menu.style.marginTop = "0px";
+    });
+}
 
-window.addEventListener("resize", () => {
-    const header = document.getElementById("header");
-    const menu = document.getElementById("menu");
-    const alturaHeader = header.offsetHeight;
-    menu.style.top = alturaHeader + "px";
-    menu.style.marginTop = "0px";
-});
+alturaHeaderMenu();

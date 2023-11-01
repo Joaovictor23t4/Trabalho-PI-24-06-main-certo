@@ -2,7 +2,8 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: #E6E6E6
+    background-color: #E6E6E6;
+    box-sizing: border-box;
 }
 
 #header {
@@ -300,6 +301,28 @@ footer {
 @media (max-width: 700px) {
     main {
         margin: 0 8%;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        margin: 0;
+    }
+    
+    article {
+        margin: 1cm;
+    }
+
+    .fonte-img {
+        display: block;
+    }
+
+    .redes-sociais a {
+        margin: 2.7%;
+    }
+
+    .navFooter > ul {
+        padding-left: 0px;
     }
 }
 
