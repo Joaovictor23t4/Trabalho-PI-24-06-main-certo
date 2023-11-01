@@ -298,3 +298,28 @@ div > p {
     color: #fff;
     font-weight: 400;
 }
+
+@media (max-width: 500px) {
+  .imagens-acontecimentos {
+    border-radius: 0;
+  }
+
+  #titulo {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .redes-sociais a {
+        margin: 2.7%;
+  }
+
+  .navFooter > ul {
+        padding-left: 0px;
+  }
+}
+
+/* @media (max-width: 444px) {
+  .flex img {
+    width: auto;
+  }
+} */

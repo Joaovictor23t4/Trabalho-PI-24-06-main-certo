@@ -324,6 +324,10 @@ footer {
     .navFooter > ul {
         padding-left: 0px;
     }
+
+    #titulo {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 550px) {

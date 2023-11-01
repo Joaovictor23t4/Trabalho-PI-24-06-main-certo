@@ -33,3 +33,23 @@ function alturaHeaderMenu() {
 }
 
 alturaHeaderMenu();
+
+// Width Body
+
+// function widthBodyIndex() {
+//     window.addEventListener("resize", () => {
+//         let body = document.body.offsetWidth;
+
+//         let imagens = document.getElementsByClassName("imagens-acontecimentos");
+
+//         for (let c = 0; c < imagens.length; c++) {
+//             imagens[c].style.width = body + "px";
+//         }
+//     });
+// }
+
+// if (document.body.offsetWidth <= 444) {
+//     widthBodyIndex()
+// };
+
+// console.log(document.body.offsetWidth);
