@@ -23,16 +23,16 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 // Altura Header
 
 function alturaHeaderMenu() {
-    window.addEventListener("resize", () => {
+    console.log("qualquer coisa")
         const header = document.getElementById("header");
         const menu = document.getElementById("menu");
         const alturaHeader = header.offsetHeight;
         menu.style.top = alturaHeader + "px";
         menu.style.marginTop = "0px";
-    });
 }
 
-alturaHeaderMenu();
+btnMobile.addEventListener("click", alturaHeaderMenu)
+window.addEventListener("load", alturaHeaderMenu)
 
 // Width Body
 
