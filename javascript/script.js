@@ -29,27 +29,9 @@ function alturaHeaderMenu() {
         const alturaHeader = header.offsetHeight;
         menu.style.top = alturaHeader + "px";
         menu.style.marginTop = "0px";
+        console.log(menu.style.top)
+        console.log(header.offsetHeight)
 }
 
-btnMobile.addEventListener("click", alturaHeaderMenu)
 window.addEventListener("load", alturaHeaderMenu)
-
-// Width Body
-
-// function widthBodyIndex() {
-//     window.addEventListener("resize", () => {
-//         let body = document.body.offsetWidth;
-
-//         let imagens = document.getElementsByClassName("imagens-acontecimentos");
-
-//         for (let c = 0; c < imagens.length; c++) {
-//             imagens[c].style.width = body + "px";
-//         }
-//     });
-// }
-
-// if (document.body.offsetWidth <= 444) {
-//     widthBodyIndex()
-// };
-
-// console.log(document.body.offsetWidth);
+btnMobile.addEventListener("click", alturaHeaderMenu)

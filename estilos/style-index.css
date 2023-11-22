@@ -105,6 +105,8 @@ img {
   position: relative;
 }
 
+/* ESTILOS QUANDO O MENU HAMBÚRGUER É CLICADO */
+
 #nav.active #hamburguer {
   border-top-color: transparent;
 }
@@ -116,47 +118,6 @@ img {
 #nav.active #hamburguer::after {
   transform: rotate(-135deg);
   top: -7px;
-}
-
-/*  RESPONSIVIDADE */
-
-@media (max-width: 810px) {
-
-  #titulo {
-      font-size: 2em;
-      margin-right: -4%;
-  }
-
-  .flex {
-      justify-content: center;
-  }
-
-  .flex img {
-      width: 100%;
-  }
-
-  #menu {
-      display: block;
-      position: absolute;
-      width: 100%;
-      top: 95px;
-      right: 0px;
-      height: 0;
-      padding-top: 20px;
-      transition: .5s;
-      background: #0460D9;
-      z-index: 1000;
-      visibility: hidden;
-      overflow-y: hidden;
-      text-align: center;
-  }
-
-  #logo {
-      flex: 0 0 auto;
-      margin-left: 42%;
-      width: 62.750px;
-  }
-  
 }
 
 /* CSS FLEXBOX */
@@ -190,10 +151,11 @@ div > p {
   width: 320px;
   height: 210px;
   border-radius: 10%;
+  transition: 2s all ease-in-out;
 }
 
 .imagens-acontecimentos:hover {
-  transform: scale(1.2); transition: .3s; cursor: pointer; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2); cursor: pointer; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 /* ELEMENTO ÂNCORA */
@@ -219,6 +181,8 @@ div > p {
       background-color: #0aa328;
       transition: .4s;
   }
+
+  /* FOOTER */
 
   footer {
     background: #000;
@@ -299,6 +263,53 @@ div > p {
     font-weight: 400;
 }
 
+/* @media (max-width: 444px) {
+  .flex img {
+    width: auto;
+  }
+} */
+
+/*  RESPONSIVIDADE */
+
+@media (max-width: 810px) {
+
+  #titulo {
+      font-size: 2em;
+      margin-right: -4%;
+  }
+
+  .flex {
+      justify-content: center;
+  }
+
+  .flex img {
+      width: 100%;
+  }
+
+  #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 95px;
+      right: 0px;
+      height: 0;
+      padding-top: 20px;
+      transition: .5s;
+      background: #0460D9;
+      z-index: 1000;
+      visibility: hidden;
+      overflow-y: hidden;
+      text-align: center;
+  }
+
+  #logo {
+      flex: 0 0 auto;
+      margin-left: 42%;
+      width: 62.750px;
+  }
+  
+}
+
 @media (max-width: 500px) {
   .imagens-acontecimentos {
     border-radius: 0;
@@ -317,9 +328,3 @@ div > p {
         padding-left: 0px;
   }
 }
-
-/* @media (max-width: 444px) {
-  .flex img {
-    width: auto;
-  }
-} */
